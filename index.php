@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 
 $addr = 'http://www.goodreads.com/review/list?v=2&id=' . getenv( GOODREADS_ID ) . '&shelf=currently-reading&per_page=1&key=' . getenv( GOODREADS_KEY );
 

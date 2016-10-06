@@ -1,4 +1,4 @@
 <?php
 
-$GOODREADS_KEY = 'xxxxxxxx';
-$GOODREADS_ID = 'xxxxxxxx';
+putenv( 'GOODREADS_KEY = xxxxxxxx' );
+putenv( 'GOODREADS_ID = xxxxxxxx' );

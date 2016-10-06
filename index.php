@@ -6,4 +6,4 @@ $addr = 'http://www.goodreads.com/review/list?v=2&id=' . getenv( GOODREADS_ID ) 
 $xml = file_get_contents( $addr );
 $data = simplexml_load_string( $xml );
 
-echo '<em>' . $data->reviews->review->book->title . '</em> by ' . $data->reviews->review->book->authors->author->name;
+echo '&ldquo;' . $data->reviews->review->book->title . '&rdquo; by ' . $data->reviews->review->book->authors->author->name;
